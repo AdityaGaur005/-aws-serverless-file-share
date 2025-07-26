@@ -90,15 +90,20 @@ def lambda_handler(event, context):
                 'headers': {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'}
             }
         
-        # Generate presigned GET URL (valid for 10 minutes)
+        # Extract filename from file_key to use in Content-Disposition header
+        filename = file_key.split('/')[-1]
+        
+        # Generate presigned GET URL (valid for 10 minutes) with forced download header
         presigned_url = s3.generate_presigned_url(
             ClientMethod='get_object',
             Params={
                 'Bucket': BUCKET_NAME,
-                'Key': file_key
+                'Key': file_key,
+                'ResponseContentDisposition': f'attachment; filename="{filename}"'
             },
             ExpiresIn=600
         )
+        
         return {
             'statusCode': 200,
             'body': json.dumps({'downloadUrl': presigned_url}),
