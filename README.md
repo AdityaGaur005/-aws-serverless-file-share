@@ -1,4 +1,4 @@
-# Serverless File Sharing App with AWS
+# Serverless File Sharing with AWS
 
 A simple, secure, and scalable serverless web application for uploading and sharing files using AWS services. This project showcases how to use AWS Lambda, API Gateway, and S3 together with a React frontend to build a modern file-sharing platform without any backend servers.
 
@@ -125,7 +125,7 @@ your-repo/
 
 ---
 
-## 📸 Screenshots / Demos (Optional)
+## 📸 Screenshots 
 <img width="1852" height="851" alt="Screenshot 2025-07-27 013625" src="https://github.com/user-attachments/assets/2dfaec7b-f4cd-4833-bc12-e06fca8685d2" />
 <img width="1397" height="760" alt="Screenshot 2025-07-27 013638" src="https://github.com/user-attachments/assets/07cf9c4b-50a4-4a1d-876c-73e3e45cac98" />
 <img width="1284" height="821" alt="Screenshot 2025-07-27 013650" src="https://github.com/user-attachments/assets/81be3553-2bb1-4c09-8df1-ea30ba458414" />
@@ -160,4 +160,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Thank you for checking out my Serverless File Sharing app! 😊
+Thank you for checking out my Serverless File Sharing service! 😊
